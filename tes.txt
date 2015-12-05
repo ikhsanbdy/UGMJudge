@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-ini editan jeihan
-=======
-ini editan wawan.
->>>>>>> 46b1790828051e483fbd19ce715c524a5ba85ca1
