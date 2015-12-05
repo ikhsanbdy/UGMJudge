@@ -1,2 +1,2 @@
 Latihan GIT
-LINE 1 : Once upon a time.
+LINE 2 : there is nothing here. I'm evil
