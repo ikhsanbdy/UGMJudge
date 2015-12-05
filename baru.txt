@@ -1,1 +1,2 @@
 Latihan GIT
+LINE 1 : Once upon a time.
