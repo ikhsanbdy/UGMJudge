@@ -28,20 +28,3 @@ div.login{
 	color: white;
 	border: 0px;
 }
-
-# Halaman utama
-
-#navi {
-	background-color: #333333;
-	color: red;
-	border-bottom-color: #0099FF;
-	height: 50px;
-	width: 100%;
-}
-
-.btn {
-	background-color: #0099FF;
-	border-color: #0099CC;
-	color: white;
-}
-
