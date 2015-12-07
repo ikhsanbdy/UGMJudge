@@ -10,12 +10,14 @@ html{
 	-ms-text-size-adjust:100%
 }
 body{
+    margin-top: 0; 
+}
+.bg-login{
     background: url('../images/bg-image.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-top: 0; 
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
 	display:block
