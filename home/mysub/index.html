@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    <title>UGMJudge | My Submission</title>
-	
-	<!--Styles-->
-    <link rel="stylesheet" href="../../css/bootstrap.css">
+	<title>UGMJudge | My Submissions</title>
+    
+    <!--Syles-->
+	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/shift.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/main.css">
-	<link rel="stylesheet" href="../../css/modal.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-	
-	<!--Scripts-->
-	<script src="../../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../css/BootSideMenu.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Scripts-->
+    <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/scripts.js"></script>
-    <script src="prefixfree.min.js"></script>
+    <script src="../../js/BootSideMenu.js"></script>
+    <script src="../../js/prefixfree.min.js"></script>
 
-  </head>
-  <body style="background-color: #efefef;">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#problems').BootSideMenu({side:"left", autoClose:true});
+        });
+    </script>
+</head>
+
+<body style="background-color: #efefef;">
+
+	<!--Problems Sidebar-->
+    <div id="problems">
+        <div class="list-group">
+            <h3 class="list-group-item-heading"><strong>Problems</strong></h3>
+            <a href="../index.html" class="list-group-item active">Problem A</a>
+            <a href="../index.html" class="list-group-item">Problem B</a>
+            <a href="../index.html" class="list-group-item">Problem C</a>
+        </div>
+    </div>
+    <!--/Test -->
+
 	<div class="nav navbar-fixed-top">
 		<div class="container">
 			<ul class="pull-left" style="margin-right: 20px">
@@ -34,14 +51,17 @@
 				<li><a href="#">04h 13m left</a></li>	
 			</ul>
 			<ul class="pull-right" style="margin-top: 15px">
-				<li><a href="../mysub/index.html">My Submissions</a></li>
+				<li><a href="index.html">My Submissions</a></li>
 				<li><a href="../rank/index.html">Ranklist</a></li>
 				<li><a href="../team/index.html">My Team</a></li>
 			</ul>
 		</div>
 	</div>
-<div id="modal-container">
-  <div class="modal-background">
+
+	<!-- Popup -->
+
+	<div id="modal-container">
+	<div class="modal-background">
     <div class="modal">
       	<h3>Soal - C</h3>
 		<h4>Download Submission</h4>
@@ -90,102 +110,108 @@
 		</table>
       <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
       <rect x="0" y="0" fill="none" width="90%" height="90%" rx="3" ry="3"></rect>
-      </svg> </div>
-  </div>
-</div>
-<div class="problem" style="margin-bottom: 0px;">
+      </svg>
+    </div>
+	</div>
+	</div>
+
+	<!-- end Popup -->
+	
+	<div class="problem" style="margin-bottom: 0px;">
 	<div class="container">
 		<div class="row outer" style="margin-top: 100px;">
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-1">
-					</div>
-					<div class="col-md-10">
-						<h3>
-							My Submission
-						</h3>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>
-										No
-									</th>
-									<th>
-										Problem
-									</th>
-									<th>
-										Submission Date
-									</th>
-									<th>
-										Status
-									</th>
-									<th>
-										Detail
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="warning">
-									<td>
-										3
-									</td>
-									<td>
-										Problem C
-									</td>
-									<td>
-										01/11/2015
-									</td>
-									<td>
-										Time Limit Exceeded
-									</td>
-									<td style="text-align:center">
-										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
-								<tr class="danger">
-									<td>
-										2
-									</td>
-									<td>
-										Problem B
-									</td>
-									<td>
-										29/10/2015
-									</td>
-									<td>
-										Wrong Answer
-									</td>
-									<td style="text-align:center">
-										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
-								<tr class="success">
-									<td>
-										1
-									</td>
-									<td>
-										Problem A
-									</td>
-									<td>
-										29/10/2015
-									</td>
-									<td>
-										Accepted
-									</td>
-									<td style="text-align:center">
-										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-1">
-					</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10">
+					<h3>
+						My Submission
+					</h3>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>
+									No
+								</th>
+								<th>
+									Problem
+								</th>
+								<th>
+									Submission Date
+								</th>
+								<th>
+									Status
+								</th>
+								<th>
+									Detail
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="warning">
+								<td>
+									3
+								</td>
+								<td>
+									Problem C
+								</td>
+								<td>
+									01/11/2015
+								</td>
+								<td>
+									Time Limit Exceeded
+								</td>
+								<td style="text-align:center">
+									<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+								</td>
+							</tr>
+							<tr class="danger">
+								<td>
+									2
+								</td>
+								<td>
+									Problem B
+								</td>
+								<td>
+									29/10/2015
+								</td>
+								<td>
+									Wrong Answer
+								</td>
+								<td style="text-align:center">
+									<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									1
+								</td>
+								<td>
+									Problem A
+								</td>
+								<td>
+									29/10/2015
+								</td>
+								<td>
+									Accepted
+								</td>
+								<td style="text-align:center">
+									<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-1">
 				</div>
 			</div>
 		</div>
+		</div>
 	</div>
-  </div>
+	</div>
+
+	<!--Script Popup-->
 	<script>
 		$('.button').click(function(){
 		  var buttonId = $(this).attr('value');
@@ -198,5 +224,6 @@
 		  $('body').removeClass('modal-active');
 		});
 	</script>
-  </body>
+
+</body>
 </html>

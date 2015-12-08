@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    <title>UGMJudge | My Team</title>
-	
-    <link rel="stylesheet" href="../../css/bootstrap.css">
+	<title>UGMJudge | My Team</title>
+    
+    <!--Syles-->
+	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/shift.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/BootSideMenu.css">
+    <!--Scripts-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/BootSideMenu.js"></script>
 
-  </head>
-  <body style="background-color: #efefef;">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#problems').BootSideMenu({side:"left", autoClose:true});
+        });
+    </script>
+
+</head>
+
+<body style="background-color: #efefef;">
+	<!--Problems Sidebar-->
+	<div id="problems">
+        <div class="list-group">
+            <h3 class="list-group-item-heading"><strong>Problems</strong></h3>
+            <a href="../index.html" class="list-group-item active">Problem A</a>
+            <a href="../index.html" class="list-group-item">Problem B</a>
+            <a href="../index.html" class="list-group-item">Problem C</a>
+        </div>
+	</div>
+	<!--/Test -->
+
 	<div class="nav navbar-fixed-top">
 		<div class="container">
 			<ul class="pull-left" style="margin-right: 20px">
@@ -27,7 +50,7 @@
 			<ul class="pull-right" style="margin-top: 15px">
 				<li><a href="../mysub/index.html">My Submissions</a></li>
 				<li><a href="../rank/index.html">Ranklist</a></li>
-				<li><a href="../team/index.html">My Team</a></li>
+				<li><a href="index.html">My Team</a></li>
 			</ul>
 		</div>
 	</div>
@@ -71,10 +94,7 @@
 		</div>
 		</div>
 	</div>
-</div>
+	</div>
 
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/scripts.js"></script>
   </body>
 </html>
