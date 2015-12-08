@@ -17,16 +17,16 @@
 	<div class="nav navbar-fixed-top">
 		<div class="container">
 			<ul class="pull-left" style="margin-right: 20px">
-				<li><img src="../../images/logo.png" style="height: 40px"></li>
+				<li><a href="../index.html"><img src="../../images/logo.png" style="height: 40px"></a></li>
 			</ul>
 			<ul class="pull-left" style="margin-top: 15px">	
-				<li><a href="#">C-Compiler</a></li>
+				<li><a href="../index.html">C-Compiler</a></li>
 				<li><a href="#">04h 13m left</a></li>	
 			</ul>
 			<ul class="pull-right" style="margin-top: 15px">
-				<li><a href="#">My Submissions</a></li>
-				<li><a href="#">Ranklist</a></li>
-				<li><a href="#">My Team</a></li>
+				<li><a href="../mysub/index.html">My Submissions</a></li>
+				<li><a href="../rank/index.html">Ranklist</a></li>
+				<li><a href="../team/index.html">My Team</a></li>
 			</ul>
 		</div>
 	</div>
@@ -44,7 +44,11 @@
 					<h4>
 						Upload
 					</h4>
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
+					<form action="/file-upload" style="margin-right: 20%;" class="dropzone needsclick dz-clikable" id="my-awesome-dropzone">
+						<div class="dz-message" style="font-size: 160%;">
+							Drop file here or click to upload.
+						</div>
+					</form>
 					<div class="row">
 						<div class="col-xs-4">
 							<h3>
