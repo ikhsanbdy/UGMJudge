@@ -7,11 +7,20 @@
 	
     <title>UGMJudge | My Submission</title>
 	
+	<!--Styles-->
     <link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/shift.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/modal.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	
+	<!--Scripts-->
+	<script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="prefixfree.min.js"></script>
 
   </head>
   <body style="background-color: #efefef;">
@@ -31,6 +40,59 @@
 			</ul>
 		</div>
 	</div>
+<div id="modal-container">
+  <div class="modal-background">
+    <div class="modal">
+      	<h3>Soal - C</h3>
+		<h4>Download Submission</h4>
+		<a href="#" style="color: blue">Soal_C.cpp</a>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Test Case</th>
+					<th>Verdict</th>
+					<th>Time</th>
+					<th>Memory</th>
+				</tr>	
+			</thead>
+			<tbody>
+				<tr>
+					<th><div class="circle" style="background-color: green;">1</div></th>
+					<th>Accepted</th>
+					<th>50 ms</th>
+					<th>2 KB</th>
+				</tr>
+				<tr>
+					<th><div class="circle" style="background-color: orange">2</div></th>
+					<th>Time Limit Exceeded</th>
+					<th>1000 ms</th>
+					<th>50 KB</th>
+				</tr>
+				<tr>
+					<th><div class="circle" style="background-color: orange">3</div></th>
+					<th>Memory Limit Exceeded</th>
+					<th>108 ms</th>
+					<th>40240 KB</th>
+				</tr>
+				<tr>
+					<th><div class="circle" style="background-color: red">4</div></th>
+					<th>Wrong Answer</th>
+					<th>83 ms</th>
+					<th>5 KB</th>
+				</tr>
+				<tr>
+					<th><div class="circle" style="background-color: black">5</div></th>
+					<th>Runtime Error</th>
+					<th>0 ms</th>
+					<th>5 KB</th>
+				</tr>
+			</tbody>
+		</table>
+      <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+      <rect x="0" y="0" fill="none" width="90%" height="90%" rx="3" ry="3"></rect>
+      </svg> </div>
+  </div>
+</div>
 <div class="problem" style="margin-bottom: 0px;">
 	<div class="container">
 		<div class="row outer" style="margin-top: 100px;">
@@ -49,103 +111,69 @@
 										No
 									</th>
 									<th>
-										Soal
+										Problem
 									</th>
 									<th>
-										Submission Time
+										Submission Date
 									</th>
 									<th>
 										Status
 									</th>
 									<th>
-										Icon
+										Detail
 									</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										01/04/2012
-									</td>
-									<td>
-										Default
-									</td>
-									<td>
-										<a href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
-								<tr class="active">
-									<td>
-										1
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										01/04/2012
-									</td>
-									<td>
-										Approved
-									</td>
-									<td>
-										<a href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
-								<tr class="success">
-									<td>
-										2
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										02/04/2012
-									</td>
-									<td>
-										Declined
-									</td>
-									<td>
-										<a href="#" style="color: #000;"><i class="fa fa-search"></i></a>
-									</td>
-								</tr>
 								<tr class="warning">
 									<td>
 										3
 									</td>
 									<td>
-										TB - Monthly
+										Problem C
 									</td>
 									<td>
-										03/04/2012
+										01/11/2015
 									</td>
 									<td>
-										Pending
+										Time Limit Exceeded
 									</td>
-									<td>
-										<a href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+									<td style="text-align:center">
+										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
 									</td>
 								</tr>
 								<tr class="danger">
 									<td>
-										4
+										2
 									</td>
 									<td>
-										TB - Monthly
+										Problem B
 									</td>
 									<td>
-										04/04/2012
+										29/10/2015
 									</td>
 									<td>
-										Call in to confirm
+										Wrong Answer
+									</td>
+									<td style="text-align:center">
+										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+									</td>
+								</tr>
+								<tr class="success">
+									<td>
+										1
 									</td>
 									<td>
-										<a href="#" style="color: #000;"><i class="fa fa-search"></i></a>
+										Problem A
+									</td>
+									<td>
+										29/10/2015
+									</td>
+									<td>
+										Accepted
+									</td>
+									<td style="text-align:center">
+										<a class="button" value="two" href="#" style="color: #000;"><i class="fa fa-search"></i></a>
 									</td>
 								</tr>
 							</tbody>
@@ -157,10 +185,18 @@
 			</div>
 		</div>
 	</div>
-</div>
+  </div>
+	<script>
+		$('.button').click(function(){
+		  var buttonId = $(this).attr('value');
+		  $('#modal-container').removeAttr('class').addClass(buttonId);
+		  $('body').addClass('modal-active');
+		})
 
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/scripts.js"></script>
+		$('#modal-container').click(function(){
+		  $(this).addClass('out');
+		  $('body').removeClass('modal-active');
+		});
+	</script>
   </body>
 </html>
